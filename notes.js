@@ -37,6 +37,7 @@ var getNote = (title) => {
 }
 
 var removeNote = (title) => {
+    debugger
     let notes = fetchNotes();
     let filteredNotes = notes.filter((note) => note.title != title);
     saveNotes(filteredNotes);
